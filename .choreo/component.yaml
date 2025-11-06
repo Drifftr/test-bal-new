@@ -1,0 +1,13 @@
+# .choreo/component.yaml
+apiVersion: choreo.wso2.com/v1alpha1
+kind: Component
+metadata:
+  name: my-service-component
+spec:
+  endpoints:
+    - name: my-service-endpoint
+      port: 8080
+      type: REST
+      networkVisibility: Project
+      context: /
+  # Other configurations like connections, environment variables, etc.
